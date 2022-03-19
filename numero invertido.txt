@@ -1,0 +1,27 @@
+/*
+ * Escriba un programa que pida al usuario un entero de tres digitos , y entregue
+* el numero con los digitos en orden inverso.
+ */
+package numeroinvertido;
+
+import java.util.Scanner;
+public class numeroinvertido {
+
+   
+    public static void main(String[] args) {
+       Scanner entrada = new Scanner(System.in);
+       
+        int i,j,k,n;
+        
+        System.out.println("Escriba su numero de tres digitosa inventir: ");
+        n = entrada.nextInt();
+        
+        i=n%10;
+        j=n/10%10;
+        k=n/100;
+        
+       System.out.println(k+j*10+i*100);
+               }       
+}
+        
+  
